@@ -30,12 +30,8 @@
         <span class="result"> extends <span class="extype" name="scala.Product">Product</span></span>
       </span>
       </h4>
-      <div class="fullcomment" id="comment"><div class="comment cmt"><p>Created by IntelliJ IDEA.
-User: mortenkjetland
-Date: 1/16/11
-Time: 4:46 PM
-To change this template use File | Settings | File Templates.
-</p></div><div class="block">
+      <div class="fullcomment" id="comment"><div class="comment cmt"><p>ServiceId is used as a unique ID to a specific service (plus environment and version).</p><p>ServiceIs used by services publishing their location and by clients asking for service locations.</p><p><b>environment</b> is a string specifying the environment the service lives in. It could be prod, test, preprod etc.</p><p><b>serviceType</b> is a string describing which type of service it is.. It is not used in any other form then to identify the service.
+ This could be usefull if you have both a SOAP and a REST version of your service at the same time.</p><p><b>name</b> is the name of your service</p><p><b>version</b> is the version of your service</p></div><div class="block">
             go to: <a href="ServiceId$.html">companion</a>
           </div><div class="block">
             linear super types: <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, AnyRef, <span class="extype" name="scala.Any">Any</span>

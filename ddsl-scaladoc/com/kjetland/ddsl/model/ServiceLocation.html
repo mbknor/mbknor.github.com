@@ -30,11 +30,19 @@
         <span class="result"> extends <span class="extype" name="scala.Product">Product</span></span>
       </span>
       </h4>
-      <div class="fullcomment" id="comment"><div class="block">
+      <div class="fullcomment" id="comment"><div class="comment cmt"><p>ServiceLocation represents one single instance/deployment of a particular server(specified with ServiceId).</p><p>DDSL does not care how you specify your urls... It can be a propper formed url like http://myserver:90/basePath or it can be just an hostname, etc...
+All you have to care about is that your client knows how to use the url-information.</p><p><b>url</b> is a string that tells the client where to find this particular instance of the service</p><p><b>testUrl</b> can be a complete url that can be used to test the service runing at this specific url..
+It can be useful if you want to create some service verifying that some services is working properly</p><p><b>quality</b> is a double-value specifying the quality of this particular service. The higher number the better. For instance,
+you could inject a proxy-service just by telling DDSL that you have higher quality than the other instances of an particular service.. This will
+make all clients use your location instead.</p><p><b>ip</b> is the IP of the machine this instance of the service is running on. This is used to make it possible for clients to prefaere local service locations.</p><p>if <i>ip</i> is not specified, it will be resolved.</p></div><div class="block">
             go to: <a href="ServiceLocation$.html">companion</a>
           </div><div class="block">
             linear super types: <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, AnyRef, <span class="extype" name="scala.Any">Any</span>
-          </div></div>
+          </div>
+            
+            
+            
+          </div>
 
       <div id="template">
 

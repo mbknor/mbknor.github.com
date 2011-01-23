@@ -30,11 +30,16 @@
         <span class="result"> extends <span class="extype" name="scala.Product">Product</span></span>
       </span>
       </h4>
-      <div class="fullcomment" id="comment"><div class="block">
+      <div class="fullcomment" id="comment"><div class="comment cmt"><p>When a client asks for a serviceLocation, it must supply a clientId - This is used to make it possible to log/track which clients is using which services..</p><p><b>environment</b> is a string specifying the environment the client lives in. It could be prod, test, preprod etc. It does not have to be
+the same environment as the service it is asking for..</p><p><b>name</b> is the name of your client</p><p><b>version</b> is the version of your client</p><p><b>ip</b> is the IP of the machine this instance of the client is running on. This is used to make it possible for clients to prefaere local service locations.</p><p>if <i>ip</i> is not specified, it will be resolved.</p></div><div class="block">
             go to: <a href="ClientId$.html">companion</a>
           </div><div class="block">
             linear super types: <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, AnyRef, <span class="extype" name="scala.Any">Any</span>
-          </div></div>
+          </div>
+            
+            
+            
+          </div>
 
       <div id="template">
 
