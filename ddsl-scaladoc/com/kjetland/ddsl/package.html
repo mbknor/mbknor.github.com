@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>com.kjetland.ddsl</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value" onload="windowTitle();">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="com">com</a>.<a href="../package.html" class="extype" name="com.kjetland">kjetland</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <h1>ddsl</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">ddsl</span>
+        
+        
+        
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" data-isabs="true" name="com.kjetland.ddsl.DdslClient">
+      <a id="DdslClient:DdslClient"></a>
+      <h4 class="signature"><a href="DdslClient.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">DdslClient</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Trait describing the interface to the DdslClient.</p>
+    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.DdslClientCacheReadsImpl">
+      <a id="DdslClientCacheReadsImpl:DdslClientCacheReadsImpl"></a>
+      <h4 class="signature"><a href="DdslClientCacheReadsImpl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DdslClientCacheReadsImpl</span>
+        
+        
+        <span class="result"> extends DdslClient</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This is a cache that caches read results for some time.</p>
+    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.DdslClientImpl">
+      <a id="DdslClientImpl:DdslClientImpl"></a>
+      <h4 class="signature"><a href="DdslClientImpl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DdslClientImpl</span>
+        
+        
+        <span class="result"> extends DdslClient</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This is the main DdslClient-implementation.</p>
+    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.DdslClientOnlyFallbackImpl">
+      <a id="DdslClientOnlyFallbackImpl:DdslClientOnlyFallbackImpl"></a>
+      <h4 class="signature"><a href="DdslClientOnlyFallbackImpl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DdslClientOnlyFallbackImpl</span>
+        
+        
+        <span class="result"> extends DdslClient</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Since we migt have a situation where our ddsl / zookeeper solution is broken or down
+we have to have a solution where we can override it.</p>
+    </li></ol>
+            </div>
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.config">
+      <a id="config:config"></a>
+      <h4 class="signature"><a href="config/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">config</span>
+        
+        
+        
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.dao">
+      <a id="dao:dao"></a>
+      <h4 class="signature"><a href="dao/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">dao</span>
+        
+        
+        
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.examples">
+      <a id="examples:examples"></a>
+      <h4 class="signature"><a href="examples/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">examples</span>
+        
+        
+        
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.exceptions">
+      <a id="exceptions:exceptions"></a>
+      <h4 class="signature"><a href="exceptions/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">exceptions</span>
+        
+        
+        
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.model">
+      <a id="model:model"></a>
+      <h4 class="signature"><a href="model/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">model</span>
+        
+        
+        
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.optimizing">
+      <a id="optimizing:optimizing"></a>
+      <h4 class="signature"><a href="optimizing/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">optimizing</span>
+        
+        
+        
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.web">
+      <a id="web:web"></a>
+      <h4 class="signature"><a href="web/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">web</span>
+        
+        
+        
+      </span>
+      </a></h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
