@@ -18,6 +18,12 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
+            <groupId>kjetland</groupId>
+            <artifactId>org_eclipse_jdt_core</artifactId>
+            <version>3.8.0.v_C03</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
             <version>3.2.1</version>
@@ -43,6 +49,12 @@
         </dependency>
     </dependencies>
     <repositories>
+        <repository>
+            <id>mbknorgithubRepository</id>
+            <name>mbknor github Repository</name>
+            <url>http://mbknor.github.com/m2repo/releases/</url>
+            <layout>default</layout>
+        </repository>
         <repository>
             <id>ScalaToolsMaven2Repository</id>
             <name>Scala-Tools Maven2 Repository</name>
