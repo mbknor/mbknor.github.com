@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.kjetland</groupId>
+    <artifactId>ddsl-webcontainer-auto_2.9.2</artifactId>
+    <packaging>jar</packaging>
+    <description>ddsl-webcontainer-auto</description>
+    <version>0.3</version>
+    <name>ddsl-webcontainer-auto</name>
+    <organization>
+        <name>com.kjetland</name>
+    </organization>
+    <dependencies>
+        <dependency>
+            <groupId>com.kjetland</groupId>
+            <artifactId>ddsl_2.9.2</artifactId>
+            <version>0.3</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.kjetland</groupId>
+            <artifactId>webcontainer-info-extractor_2.9.2</artifactId>
+            <version>1.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <repositories>
+        <repository>
+            <id>mbknorgithubRepository</id>
+            <name>mbknor github Repository</name>
+            <url>http://mbknor.github.com/m2repo/releases/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>TypesafeRepository</id>
+            <name>Typesafe Repository</name>
+            <url>http://repo.typesafe.com/typesafe/releases/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+</project>

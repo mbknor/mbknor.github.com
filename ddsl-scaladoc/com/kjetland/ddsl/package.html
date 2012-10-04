@@ -5,187 +5,205 @@
           <title>com.kjetland.ddsl</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
       <script type="text/javascript" src="../../../lib/jquery.js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="value" onload="windowTitle();">
-
-      <p id="owner"><a href="../../package.html" class="extype" name="com">com</a>.<a href="../package.html" class="extype" name="com.kjetland">kjetland</a></p>
-
+        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
       <div id="definition">
         <img src="../../../lib/package_big.png" />
+        <p id="owner"><a name="com" class="extype" href="../../package.html">com</a>.<a name="com.kjetland" class="extype" href="../package.html">kjetland</a></p>
         <h1>ddsl</h1>
       </div>
 
       <h4 class="signature" id="signature">
-      <span class="kind">package</span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
       <span class="symbol">
         <span class="name">ddsl</span>
-        
-        
-        
       </span>
       </h4>
-      <div class="fullcomment" id="comment"></div>
+      
+      <div class="fullcommenttop" id="comment"></div>
+    
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
 
       <div id="template">
-
-        <div id="mbrsel">
-          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
-          
-          
-          <div id="visbl">
-              <span class="filtertype">Visibility</span>
-              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-            </div>
-          <div id="impl">
-              <span class="filtertype">Impl.</span>
-              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
-            </div>
-        </div>
-
+        <div id="allMembers">
         
 
         <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" data-isabs="true" name="com.kjetland.ddsl.DdslClient">
+              <ol><li visbl="pub" name="com.kjetland.ddsl.DdslClient" data-isabs="true">
       <a id="DdslClient:DdslClient"></a>
-      <h4 class="signature"><a href="DdslClient.html">
-      <span class="kind">trait</span>
-      <span class="symbol">
-        <span class="name">DdslClient</span>
-        
-        
-        <span class="result"> extends AnyRef</span>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="DdslClient.html"><span class="name">DdslClient</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
       <p class="comment cmt">Trait describing the interface to the DdslClient.</p>
-    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.DdslClientCacheReadsImpl">
+    </li><li visbl="pub" name="com.kjetland.ddsl.DdslClientCacheReadsImpl" data-isabs="false">
       <a id="DdslClientCacheReadsImpl:DdslClientCacheReadsImpl"></a>
-      <h4 class="signature"><a href="DdslClientCacheReadsImpl.html">
-      <span class="kind">class</span>
-      <span class="symbol">
-        <span class="name">DdslClientCacheReadsImpl</span>
-        
-        
-        <span class="result"> extends DdslClient</span>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="DdslClientCacheReadsImpl.html"><span class="name">DdslClientCacheReadsImpl</span></a><span class="result"> extends DdslClient</span>
+      </span>
+      </h4>
       <p class="comment cmt">This is a cache that caches read results for some time.</p>
-    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.DdslClientImpl">
+    </li><li visbl="pub" name="com.kjetland.ddsl.DdslClientImpl" data-isabs="false">
       <a id="DdslClientImpl:DdslClientImpl"></a>
-      <h4 class="signature"><a href="DdslClientImpl.html">
-      <span class="kind">class</span>
-      <span class="symbol">
-        <span class="name">DdslClientImpl</span>
-        
-        
-        <span class="result"> extends DdslClient</span>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="DdslClientImpl.html"><span class="name">DdslClientImpl</span></a><span class="result"> extends DdslClient</span>
+      </span>
+      </h4>
       <p class="comment cmt"> This is the main DdslClient-implementation.</p>
-    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.DdslClientOnlyFallbackImpl">
+    </li><li visbl="pub" name="com.kjetland.ddsl.DdslClientOnlyFallbackImpl" data-isabs="false">
       <a id="DdslClientOnlyFallbackImpl:DdslClientOnlyFallbackImpl"></a>
-      <h4 class="signature"><a href="DdslClientOnlyFallbackImpl.html">
-      <span class="kind">class</span>
-      <span class="symbol">
-        <span class="name">DdslClientOnlyFallbackImpl</span>
-        
-        
-        <span class="result"> extends DdslClient</span>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="DdslClientOnlyFallbackImpl.html"><span class="name">DdslClientOnlyFallbackImpl</span></a><span class="result"> extends DdslClient</span>
+      </span>
+      </h4>
       <p class="comment cmt">Since we migt have a situation where our ddsl / zookeeper solution is broken or down
 we have to have a solution where we can override it.</p>
     </li></ol>
             </div>
 
+        
+
         <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.config">
+              <ol><li visbl="pub" name="com.kjetland.ddsl.config" data-isabs="false">
       <a id="config:config"></a>
-      <h4 class="signature"><a href="config/package.html">
-      <span class="kind">package</span>
-      <span class="symbol">
-        <span class="name">config</span>
-        
-        
-        
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="config/package.html"><span class="name">config</span></a>
+      </span>
+      </h4>
       
-    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.dao">
+    </li><li visbl="pub" name="com.kjetland.ddsl.dao" data-isabs="false">
       <a id="dao:dao"></a>
-      <h4 class="signature"><a href="dao/package.html">
-      <span class="kind">package</span>
-      <span class="symbol">
-        <span class="name">dao</span>
-        
-        
-        
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="dao/package.html"><span class="name">dao</span></a>
+      </span>
+      </h4>
       
-    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.examples">
+    </li><li visbl="pub" name="com.kjetland.ddsl.examples" data-isabs="false">
       <a id="examples:examples"></a>
-      <h4 class="signature"><a href="examples/package.html">
-      <span class="kind">package</span>
-      <span class="symbol">
-        <span class="name">examples</span>
-        
-        
-        
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="examples/package.html"><span class="name">examples</span></a>
+      </span>
+      </h4>
       
-    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.exceptions">
+    </li><li visbl="pub" name="com.kjetland.ddsl.exceptions" data-isabs="false">
       <a id="exceptions:exceptions"></a>
-      <h4 class="signature"><a href="exceptions/package.html">
-      <span class="kind">package</span>
-      <span class="symbol">
-        <span class="name">exceptions</span>
-        
-        
-        
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="exceptions/package.html"><span class="name">exceptions</span></a>
+      </span>
+      </h4>
       
-    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.model">
+    </li><li visbl="pub" name="com.kjetland.ddsl.model" data-isabs="false">
       <a id="model:model"></a>
-      <h4 class="signature"><a href="model/package.html">
-      <span class="kind">package</span>
-      <span class="symbol">
-        <span class="name">model</span>
-        
-        
-        
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="model/package.html"><span class="name">model</span></a>
+      </span>
+      </h4>
       
-    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.optimizing">
+    </li><li visbl="pub" name="com.kjetland.ddsl.optimizing" data-isabs="false">
       <a id="optimizing:optimizing"></a>
-      <h4 class="signature"><a href="optimizing/package.html">
-      <span class="kind">package</span>
-      <span class="symbol">
-        <span class="name">optimizing</span>
-        
-        
-        
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="optimizing/package.html"><span class="name">optimizing</span></a>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.kjetland.ddsl.utils" data-isabs="false">
+      <a id="utils:utils"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="utils/package.html"><span class="name">utils</span></a>
+      </span>
+      </h4>
       
     </li></ol>
             </div>
 
         
+        </div>
+
+        <div id="inheritedMembers">
+        
+        </div>
 
       </div>
-      
+
       <div id="tooltip"></div>
-      
+
+      <div id="footer">  </div>
+
+
     </body>
       </html>

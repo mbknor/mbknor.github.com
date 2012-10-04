@@ -5,152 +5,158 @@
           <title>com.kjetland.ddsl.model</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link href="../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../lib/template.css" />
       <script type="text/javascript" src="../../../../lib/jquery.js"></script>
       <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="value" onload="windowTitle();">
-
-      <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.kjetland">kjetland</a>.<a href="../package.html" class="extype" name="com.kjetland.ddsl">ddsl</a></p>
-
+        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
       <div id="definition">
         <img src="../../../../lib/package_big.png" />
+        <p id="owner"><a name="com" class="extype" href="../../../package.html">com</a>.<a name="com.kjetland" class="extype" href="../../package.html">kjetland</a>.<a name="com.kjetland.ddsl" class="extype" href="../package.html">ddsl</a></p>
         <h1>model</h1>
       </div>
 
       <h4 class="signature" id="signature">
-      <span class="kind">package</span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
       <span class="symbol">
         <span class="name">model</span>
-        
-        
-        
       </span>
       </h4>
-      <div class="fullcomment" id="comment"></div>
+      
+      <div class="fullcommenttop" id="comment"></div>
+    
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
 
       <div id="template">
-
-        <div id="mbrsel">
-          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
-          
-          
-          <div id="visbl">
-              <span class="filtertype">Visibility</span>
-              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-            </div>
-          <div id="impl">
-              <span class="filtertype">Impl.</span>
-              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
-            </div>
-        </div>
-
+        <div id="allMembers">
         
 
         <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.model.ClientId">
+              <ol><li visbl="pub" name="com.kjetland.ddsl.model.ClientId" data-isabs="false">
       <a id="ClientId:ClientId"></a>
-      <h4 class="signature"><a href="ClientId.html">
-      <span class="kind">case class</span>
-      <span class="symbol">
-        <span class="name">ClientId</span>
-        
-        <span class="params">(<span name="environment">environment: String</span>, <span name="name">name: String</span>, <span name="version">version: String</span>, <span name="ip">ip: String</span>)</span>
-        <span class="result"> extends Product</span>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="ClientId.html"><span class="name">ClientId</span></a><span class="params">(<span name="environment">environment: String</span>, <span name="name">name: String</span>, <span name="version">version: String</span>, <span name="ip">ip: String</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
       <p class="comment cmt">When a client asks for a serviceLocation, it must supply a clientId - This is used to make it possible to log/track which clients is using which services.</p>
-    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.model.Service">
+    </li><li visbl="pub" name="com.kjetland.ddsl.model.Service" data-isabs="false">
       <a id="Service:Service"></a>
-      <h4 class="signature"><a href="Service.html">
-      <span class="kind">case class</span>
-      <span class="symbol">
-        <span class="name">Service</span>
-        
-        <span class="params">(<span name="id">id: ServiceId</span>, <span name="sl">sl: ServiceLocation</span>)</span>
-        <span class="result"> extends Product</span>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="Service.html"><span class="name">Service</span></a><span class="params">(<span name="id">id: ServiceId</span>, <span name="sl">sl: ServiceLocation</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
       <p class="comment cmt">Specifies a specific serviceLocation for a specific serviceId
 </p>
-    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.model.ServiceId">
+    </li><li visbl="pub" name="com.kjetland.ddsl.model.ServiceId" data-isabs="false">
       <a id="ServiceId:ServiceId"></a>
-      <h4 class="signature"><a href="ServiceId.html">
-      <span class="kind">case class</span>
-      <span class="symbol">
-        <span class="name">ServiceId</span>
-        
-        <span class="params">(<span name="environment">environment: String</span>, <span name="serviceType">serviceType: String</span>, <span name="name">name: String</span>, <span name="version">version: String</span>)</span>
-        <span class="result"> extends Product</span>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="ServiceId.html"><span class="name">ServiceId</span></a><span class="params">(<span name="environment">environment: String</span>, <span name="serviceType">serviceType: String</span>, <span name="name">name: String</span>, <span name="version">version: String</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
       <p class="comment cmt">ServiceId is used as a unique ID to a specific service (plus environment and version).</p>
-    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.model.ServiceLocation">
+    </li><li visbl="pub" name="com.kjetland.ddsl.model.ServiceLocation" data-isabs="false">
       <a id="ServiceLocation:ServiceLocation"></a>
-      <h4 class="signature"><a href="ServiceLocation.html">
-      <span class="kind">case class</span>
-      <span class="symbol">
-        <span class="name">ServiceLocation</span>
-        
-        <span class="params">(<span name="url">url: String</span>, <span name="quality">quality: Double</span>, <span name="lastUpdated">lastUpdated: DateTime</span>, <span name="ip">ip: String</span>)</span>
-        <span class="result"> extends Product</span>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="ServiceLocation.html"><span class="name">ServiceLocation</span></a><span class="params">(<span name="url">url: String</span>, <span name="quality">quality: Double</span>, <span name="lastUpdated">lastUpdated: DateTime</span>, <span name="ip">ip: String</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
       <p class="comment cmt">ServiceLocation represents one single instance/deployment of a particular server(specified with ServiceId).</p>
-    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.model.ServiceRequest">
+    </li><li visbl="pub" name="com.kjetland.ddsl.model.ServiceRequest" data-isabs="false">
       <a id="ServiceRequest:ServiceRequest"></a>
-      <h4 class="signature"><a href="ServiceRequest.html">
-      <span class="kind">case class</span>
-      <span class="symbol">
-        <span class="name">ServiceRequest</span>
-        
-        <span class="params">(<span name="sid">sid: ServiceId</span>, <span name="cid">cid: ClientId</span>)</span>
-        <span class="result"> extends Product</span>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="ServiceRequest.html"><span class="name">ServiceRequest</span></a><span class="params">(<span name="sid">sid: ServiceId</span>, <span name="cid">cid: ClientId</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
       <p class="comment cmt">Used when a specific client is requesting a specific service
 </p>
-    </li><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.model.ServiceWithLocations">
+    </li><li visbl="pub" name="com.kjetland.ddsl.model.ServiceWithLocations" data-isabs="false">
       <a id="ServiceWithLocations:ServiceWithLocations"></a>
-      <h4 class="signature"><a href="ServiceWithLocations.html">
-      <span class="kind">case class</span>
-      <span class="symbol">
-        <span class="name">ServiceWithLocations</span>
-        
-        <span class="params">(<span name="id">id: ServiceId</span>, <span name="locations">locations: Array[ServiceLocation]</span>)</span>
-        <span class="result"> extends Product</span>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="ServiceWithLocations.html"><span class="name">ServiceWithLocations</span></a><span class="params">(<span name="id">id: ServiceId</span>, <span name="locations">locations: Array[ServiceLocation]</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
       <p class="comment cmt">Utility case class holding info about one specific serviceId and all its present available serviceLocations</p>
     </li></ol>
             </div>
 
+        
+
         <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" data-isabs="false" name="com.kjetland.ddsl.model.DdslDefaults">
+              <ol><li visbl="pub" name="com.kjetland.ddsl.model.DdslDefaults" data-isabs="false">
       <a id="DdslDefaults:DdslDefaults"></a>
-      <h4 class="signature"><a href="DdslDefaults$.html">
-      <span class="kind">object</span>
-      <span class="symbol">
-        <span class="name">DdslDefaults</span>
-        
-        
-        <span class="result"> extends AnyRef</span>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
       </span>
-      </a></h4>
+      <span class="symbol">
+        <a href="DdslDefaults$.html"><span class="name">DdslDefaults</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
       
     </li></ol>
             </div>
 
         
+        </div>
+
+        <div id="inheritedMembers">
+        
+        </div>
 
       </div>
-      
+
       <div id="tooltip"></div>
-      
+
+      <div id="footer">  </div>
+
+
     </body>
       </html>
