@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.kjetland.ddsl</groupId>
+	<artifactId>ddsl-dropwizard</artifactId>	
+	<version>2.0</version>
+	<packaging>jar</packaging>
+
+	<dependencies>
+	    <dependency>
+	        <groupId>io.dropwizard</groupId>
+	        <artifactId>dropwizard-core</artifactId>
+	        <version>0.7.0</version>
+            <scope>provided</scope>
+	    </dependency>
+        <dependency>
+            <groupId>com.kjetland</groupId>
+            <artifactId>ddsl_2.9.2</artifactId>
+            <version>0.3.2</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.2.3</version>
+        </dependency>
+	</dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+
+    <repositories>
+        <repository>
+            <id>mbknor</id>
+            <name>mbknor</name>
+            <url>http://mbknor.github.com/m2repo/releases</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>mbk_mvn_repo</id>
+            <layout>default</layout>
+            <name>mbk_mvn_repo</name>
+            <url>file://localhost/Users/mbknor/projects/mbknor/mbknor.github.com/m2repo/releases</url>
+        </repository>
+    </distributionManagement>
+
+
+
+</project>
