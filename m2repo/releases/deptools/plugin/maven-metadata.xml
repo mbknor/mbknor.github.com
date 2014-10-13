@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>maven-deptools-plugin</name>
+      <prefix>deptools</prefix>
+      <artifactId>maven-deptools-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>
