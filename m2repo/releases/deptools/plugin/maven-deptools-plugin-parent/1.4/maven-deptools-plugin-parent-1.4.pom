@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>deptools.plugin</groupId>
+    <artifactId>maven-deptools-plugin-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.4</version>
+    <name>maven-deptools-plugin parent</name>
+    <url>http://maven.apache.org</url>
+
+
+    <modules>
+        <module>maven-deptools-plugin</module>
+        <module>maven-deptools-plugin-scala</module>
+		<module>enforcer-rule</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>mbknor</id>
+            <name>mbknor</name>
+            <url>https://raw.githubusercontent.com/mbknor/mbknor.github.com/master/m2repo/releases</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>mbk_mvn_repo</id>
+            <layout>default</layout>
+            <name>mbk_mvn_repo</name>
+            <url>file:///projects/git/mbknor.github.com/m2repo/releases</url>
+        </repository>
+    </distributionManagement>
+</project>
